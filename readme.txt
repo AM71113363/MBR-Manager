@@ -19,7 +19,7 @@ EDIT-PC-HDD:
 Don't run this executable if you don't have a BOOT DISC.
 
 EDIT-EXTERNAL-HDD-USB-STORAGE
-Do what you want.
+You can use it to restore MBR in case of virures.
 
 
 PS: Don't click on "Write To Drive" if don't know what you are doing.
