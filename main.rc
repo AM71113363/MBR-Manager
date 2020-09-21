@@ -1,0 +1,94 @@
+#include "main.h"
+
+200 ICON "Hard_Drive.ico"
+
+MAINMENU MENU 
+{
+  POPUP "DISK"
+  {
+     POPUP "PhysicalDrive"
+     {
+      MENUITEM "0", PD_0
+      MENUITEM "1", PD_1
+      MENUITEM "2", PD_2
+      MENUITEM "3", PD_3
+      MENUITEM "4", PD_4
+      MENUITEM "5", PD_5
+      MENUITEM "6", PD_6
+      MENUITEM "7", PD_7
+      }
+     POPUP "Drive"
+     {
+      MENUITEM "A", D_A
+      MENUITEM "B", D_B
+      MENUITEM "C", D_C
+      MENUITEM "D", D_D
+      MENUITEM "E", D_E
+      MENUITEM "F", D_F
+      MENUITEM "G", D_G
+      MENUITEM "H", D_H
+      MENUITEM "I", D_I
+      MENUITEM "J", D_J
+      MENUITEM "K", D_K
+      MENUITEM "L", D_L
+      MENUITEM "M", D_M
+      MENUITEM "N", D_N
+      MENUITEM "O", D_O
+      MENUITEM "P", D_P
+      MENUITEM "Q", D_Q
+      MENUITEM "R", D_R
+      MENUITEM "S", D_S
+      MENUITEM "T", D_T
+      MENUITEM "U", D_U
+      MENUITEM "V", D_V
+      MENUITEM "W", D_W
+      MENUITEM "X", D_X
+      MENUITEM "Y", D_Y
+      MENUITEM "Z", D_Z
+     }
+  }
+ POPUP "MBR"
+ {
+  POPUP "Load From File"
+  {     
+      MENUITEM "Update Boot Loader", MBR_RB 
+      MENUITEM "Update Partition Table", MBR_RP 
+      MENUITEM "Update ALL MBR", MBR_RA 
+  
+  }
+  MENUITEM "Save To File",    MBR_S
+  MENUITEM "Write To Drive",  MBR_W
+ }
+  POPUP "View"
+ {
+  MENUITEM "Hex - Mode", M_Hex 
+  MENUITEM "Text - Mode", M_Text 
+ }
+}
+
+1 VERSIONINFO
+FILEVERSION 1,0,2,0
+PRODUCTVERSION 1,0,2,0
+FILETYPE VFT_APP
+{
+  BLOCK "StringFileInfo"
+	 {
+		 BLOCK "040904E4"
+		 {
+			 VALUE "CompanyName", "AM71113363"
+			 VALUE "FileVersion", ""
+			 VALUE "FileDescription", "MBR 21-09-2020"
+			 VALUE "InternalName", ""
+			 VALUE "LegalCopyright", ""
+			 VALUE "LegalTrademarks", ""
+			 VALUE "OriginalFilename", ""
+			 VALUE "ProductName", ""
+			 VALUE "ProductVersion", "2.0"
+		 }
+	 }
+  BLOCK "VarFileInfo"
+	 {
+		 VALUE "Translation", 0x0409, 1252
+	 }
+}
+
